@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="crepasdbModelStoreContainer" CdmEntityContainer="crepasdbEntities">
+    <EntitySetMapping Name="DetallePedidoes">
+      <EntityTypeMapping TypeName="crepasdbModel.DetallePedido">
+        <MappingFragment StoreEntitySet="DetallePedido">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Idpedido" ColumnName="Idpedido" />
+          <ScalarProperty Name="horarealizada" ColumnName="horarealizada" />
+          <ScalarProperty Name="Idproducto" ColumnName="Idproducto" />
+          <ScalarProperty Name="EspedidoEspecial" ColumnName="EspedidoEspecial" />
+          <ScalarProperty Name="DescripcionEspecial" ColumnName="DescripcionEspecial" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pedidoes">
+      <EntityTypeMapping TypeName="crepasdbModel.Pedido">
+        <MappingFragment StoreEntitySet="Pedido">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdTipo" ColumnName="IdTipo" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IdTipoPago" ColumnName="IdTipoPago" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personas">
+      <EntityTypeMapping TypeName="crepasdbModel.Persona">
+        <MappingFragment StoreEntitySet="Persona">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="DPI" ColumnName="DPI" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Direccion1" ColumnName="Direccion1" />
+          <ScalarProperty Name="Direccion2" ColumnName="Direccion2" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Productoes">
+      <EntityTypeMapping TypeName="crepasdbModel.Producto">
+        <MappingFragment StoreEntitySet="Producto">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NombreProducto" ColumnName="NombreProducto" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoPagoes">
+      <EntityTypeMapping TypeName="crepasdbModel.TipoPago">
+        <MappingFragment StoreEntitySet="TipoPago">
+          <ScalarProperty Name="Pagonombre" ColumnName="Pagonombre" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="campo" ColumnName="campo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoPedidoes">
+      <EntityTypeMapping TypeName="crepasdbModel.TipoPedido">
+        <MappingFragment StoreEntitySet="TipoPedido">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NombreStatus" ColumnName="NombreStatus" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="crepasdbModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdPersona" ColumnName="IdPersona" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
